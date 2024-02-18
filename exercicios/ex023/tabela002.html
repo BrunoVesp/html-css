@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -47,8 +69,8 @@
         <caption>Poupulação da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Poupulação</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Poupulação</th>
             </tr>
         </thead>
         <tbody>
@@ -163,10 +185,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eligendi sint tempora iste mollitia atque et, sit accusamus repellat adipisci tenetur tempore magnam cum nulla unde, commodi nesciunt maxime non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus fugit quas hic ut iusto, officia pariatur dolor dicta debitis cupiditate commodi expedita, tempora excepturi animi officiis minima quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure labore reiciendis voluptatem molestias commodi fugit doloremque ipsam, nam, quisquam vel accusantium ipsa exercitationem fugiat obcaecati culpa debitis rerum facilis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure error quam eligendi quasi nobis fugit sunt repellat veniam. Pariatur, itaque! Rerum blanditiis ad incidunt atque assumenda delectus, totam laborum.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eligendi sint tempora iste mollitia atque et, sit accusamus repellat adipisci tenetur tempore magnam cum nulla unde, commodi nesciunt maxime non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus fugit quas hic ut iusto, officia pariatur dolor dicta debitis cupiditate commodi expedita, tempora excepturi animi officiis minima quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure labore reiciendis voluptatem molestias commodi fugit doloremque ipsam, nam, quisquam vel accusantium ipsa exercitationem fugiat obcaecati culpa debitis rerum facilis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure error quam eligendi quasi nobis fugit sunt repellat veniam. Pariatur, itaque! Rerum blanditiis ad incidunt atque assumenda delectus, totam laborum.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eligendi sint tempora iste mollitia atque et, sit accusamus repellat adipisci tenetur tempore magnam cum nulla unde, commodi nesciunt maxime non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus fugit quas hic ut iusto, officia pariatur dolor dicta debitis cupiditate commodi expedita, tempora excepturi animi officiis minima quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure labore reiciendis voluptatem molestias commodi fugit doloremque ipsam, nam, quisquam vel accusantium ipsa exercitationem fugiat obcaecati culpa debitis rerum facilis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure error quam eligendi quasi nobis fugit sunt repellat veniam. Pariatur, itaque! Rerum blanditiis ad incidunt atque assumenda delectus, totam laborum.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eligendi sint tempora iste mollitia atque et, sit accusamus repellat adipisci tenetur tempore magnam cum nulla unde, commodi nesciunt maxime non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus fugit quas hic ut iusto, officia pariatur dolor dicta debitis cupiditate commodi expedita, tempora excepturi animi officiis minima quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure labore reiciendis voluptatem molestias commodi fugit doloremque ipsam, nam, quisquam vel accusantium ipsa exercitationem fugiat obcaecati culpa debitis rerum facilis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure error quam eligendi quasi nobis fugit sunt repellat veniam. Pariatur, itaque! Rerum blanditiis ad incidunt atque assumenda delectus, totam laborum.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eligendi sint tempora iste mollitia atque et, sit accusamus repellat adipisci tenetur tempore magnam cum nulla unde, commodi nesciunt maxime non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus fugit quas hic ut iusto, officia pariatur dolor dicta debitis cupiditate commodi expedita, tempora excepturi animi officiis minima quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure labore reiciendis voluptatem molestias commodi fugit doloremque ipsam, nam, quisquam vel accusantium ipsa exercitationem fugiat obcaecati culpa debitis rerum facilis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure error quam eligendi quasi nobis fugit sunt repellat veniam. Pariatur, itaque! Rerum blanditiis ad incidunt atque assumenda delectus, totam laborum.lore</p>
 </body>
 </html>
